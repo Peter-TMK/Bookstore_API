@@ -1,16 +1,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const CONFIG = require('./config/config');
+
+const bookRouter = require('./routes/books.route')
+
 const connectToDb = require('./db/mongodb');
- 
+
 const app = express();
 
 // db connection
 connectToDb();
 
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
+app.use('/api/v1/books', bookRouter)
 
 app.get('/', (req, res) => {
     res.send('Hello Christmas')
