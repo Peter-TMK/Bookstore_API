@@ -1,8 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const CONFIG = require('./config/config');
-
+const connectToDb = require('./db/mongodb');
+ 
 const app = express();
+
+connectToDb();
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }))
