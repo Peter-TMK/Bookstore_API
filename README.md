@@ -18,8 +18,8 @@
 - PUT /api/v1/books/:id (protected) ==> Updates a book by ID
 - DELETE /api/v1/books/:id (protected) ==> Delete a book by ID
 
-## Other MW
-- Rate Limiting
-- Security middleware
-- Good logging
-- Validating
+## Other Middleware
+- Validating : using joi
+- Rate Limiting : using express-rate-limit
+- Security middleware : using helmet
+- Good logging : using winston, morgan and  morgan-json
