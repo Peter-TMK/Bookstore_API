@@ -1,0 +1,121 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Bookstore_API",
+  "dateExported": "2022-12-29T06:44:29.378Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "2f5b11cb-1680-48f6-8644-33a31c84d380",
+      "name": "Books",
+      "containerId": "",
+      "created": "2022-12-29T06:31:14.879Z",
+      "sortNum": 10000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "ec9b7aa3-7ca9-49c7-8a41-970d439dc14d",
+      "colId": "e67e9d03-d2f2-4a3c-a466-985523576fb9",
+      "containerId": "2f5b11cb-1680-48f6-8644-33a31c84d380",
+      "name": "GET all books / ",
+      "url": "http://localhost:5500/api/v1/books",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2022-12-28T17:19:58.117Z",
+      "modified": "2022-12-29T06:31:25.903Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "214745d6-b539-423f-8694-37a796241d91",
+      "colId": "e67e9d03-d2f2-4a3c-a466-985523576fb9",
+      "containerId": "2f5b11cb-1680-48f6-8644-33a31c84d380",
+      "name": "GET /",
+      "url": "http://localhost:5500",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-12-28T14:04:08.744Z",
+      "modified": "2022-12-29T06:31:28.154Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "34064199-1d48-4052-817c-861d59bea9a7",
+      "colId": "e67e9d03-d2f2-4a3c-a466-985523576fb9",
+      "containerId": "2f5b11cb-1680-48f6-8644-33a31c84d380",
+      "name": "Add a book /",
+      "url": "http://localhost:5500/api/v1/books",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2022-12-28T17:33:13.868Z",
+      "modified": "2022-12-29T06:31:30.047Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Years 4\",\n  \"shortDescription\": \"Events of the Year 2022 - 4\",\n  \"longDescription\": \"2022 is a wonderful year, filled with glorious events...4\",\n  \"year\": 2022,\n  \"isbn\": \"711180873893\",\n  \"price\": 101.77\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "430f3da2-84cd-44a9-a697-0cb462d0a0d1",
+      "colId": "e67e9d03-d2f2-4a3c-a466-985523576fb9",
+      "containerId": "2f5b11cb-1680-48f6-8644-33a31c84d380",
+      "name": "Update a book /",
+      "url": "http://localhost:5500/api/v1/books/63ac82fab64f017543879cc9",
+      "method": "PUT",
+      "sortNum": 40000,
+      "created": "2022-12-29T05:56:09.226Z",
+      "modified": "2022-12-29T06:31:31.871Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Years 3\",\n  \"shortDescription\": \"Events of the Year 2022 - 3\",\n  \"longDescription\": \"2022 is a wonderful year, filled with glorious events...3\",\n  \"year\": 2022,\n  \"isbn\": \"611180873893\",\n  \"price\": 89.9\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "8f0e567f-0c89-4ac1-9aee-06c3a5bbdd01",
+      "colId": "e67e9d03-d2f2-4a3c-a466-985523576fb9",
+      "containerId": "2f5b11cb-1680-48f6-8644-33a31c84d380",
+      "name": "GET a book by ID /",
+      "url": "http://localhost:5500/api/v1/books/63ac80ebb8c432e71b458295",
+      "method": "GET",
+      "sortNum": 50000,
+      "created": "2022-12-29T06:15:01.510Z",
+      "modified": "2022-12-29T06:31:33.624Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Years 3\",\n  \"shortDescription\": \"Events of the Year 2022 - 3\",\n  \"longDescription\": \"2022 is a wonderful year, filled with glorious events...3\",\n  \"year\": 2022,\n  \"isbn\": \"611180873893\",\n  \"price\": 89.9\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "30d087ba-4b02-4415-8c2d-7bd1eb811210",
+      "colId": "e67e9d03-d2f2-4a3c-a466-985523576fb9",
+      "containerId": "2f5b11cb-1680-48f6-8644-33a31c84d380",
+      "name": "DELETE a book by ID /",
+      "url": "http://localhost:5500/api/v1/books/63ad31700ebba335e91a5349",
+      "method": "DELETE",
+      "sortNum": 60000,
+      "created": "2022-12-29T06:19:54.732Z",
+      "modified": "2022-12-29T06:31:35.465Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Years 3\",\n  \"shortDescription\": \"Events of the Year 2022 - 3\",\n  \"longDescription\": \"2022 is a wonderful year, filled with glorious events...3\",\n  \"year\": 2022,\n  \"isbn\": \"611180873893\",\n  \"price\": 89.9\n}",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}

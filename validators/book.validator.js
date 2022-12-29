@@ -20,7 +20,7 @@ const BookUpdateSchema = Joi.object({
   price: Joi.number().min(0),
 });
 
-async function BookValidationMiddleWare(req, res, next) {
+async function bookValidationMiddleWare(req, res, next) {
   const bookPayload = req.body;
 
   try {
@@ -34,7 +34,7 @@ async function BookValidationMiddleWare(req, res, next) {
   }
 }
 
-async function UpdateBookValidationMiddleware(req, res, next) {
+async function updateBookValidationMiddleware(req, res, next) {
     const bookPayLoad = req.body
 
     try {
@@ -49,6 +49,6 @@ async function UpdateBookValidationMiddleware(req, res, next) {
 }
 
 module.exports = {
-    BookValidationMiddleWare,
-    UpdateBookValidationMiddleware,
+    bookValidationMiddleWare,
+    updateBookValidationMiddleware,
 }
