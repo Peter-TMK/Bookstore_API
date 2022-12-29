@@ -21,5 +21,5 @@
 ## Other Middleware
 - Validating : using joi
 - Rate Limiting : using express-rate-limit
-- Security middleware : using helmet
+- Security middleware : using helmet and auth0
 - Good logging : using winston, morgan and  morgan-json
