@@ -1,5 +1,9 @@
 const express = require('express')
-const BookValidationMiddleWare = require('../validators/book.validator')
+const {
+    BookValidationMiddleWare,
+    UpdateBookValidationMiddleware
+} = require('../validators/book.validator')
+
 const bookModel = require('../models/books.model')
 
 const bookRouter = express.Router()
@@ -38,7 +42,7 @@ bookRouter.post('/', BookValidationMiddleWare, (req, res) => {
         })
 })
 
-bookRouter.put('/:id', (req, res) => {
+bookRouter.put('/:id', UpdateBookValidationMiddleware, (req, res) => {
     const id = req.params.id
     const book = req.body
     book.lastUpdateAt = new Date() // set the lastUpdateAt to the current date
