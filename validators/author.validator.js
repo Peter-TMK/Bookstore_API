@@ -47,6 +47,6 @@ async function updateAuthorValidationMiddleware(req, res, next) {
 }
 
 module.exports = {
-  AddAuthorValidationMiddleware,
-  UpdateAuthorValidationMiddleware,
+  addAuthorValidationMiddleware,
+  updateAuthorValidationMiddleware,
 };
